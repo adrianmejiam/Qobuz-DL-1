@@ -89,7 +89,7 @@ https://t.me/qobuzz/5683
         except Exception as e:
             sendMessage(message, helpstr + "\n\n" + str(e))
             continue
-    sendMessage(inme, f"✅ Unduhan Selesai {message.from_user.mention}\nCek Hasil Unduhan @QobuzzDump")
+    sendMessage(inme, f"✅ Unduhan Selesai {message.from_user.mention}\n📦 Cek Hasil Unduhan @QobuzzDump")
     editMessage(inme, "ᴍᴇɴɢᴜɴɢɢᴀʜ ꜱᴇʟᴇꜱᴀɪ")
     try: shutil.rmtree("qobuzdown")
     except: pass
