@@ -27,7 +27,7 @@ def antiSpam(client: Client, message: Message):
 
     # tek işlem
     if os.path.isfile("calisiyor.txt"):
-        a = sendMessage(message, f"Member Lain Sedang Mengunduh Lagu.\nTunggu Giliranmu {message.from_user.mention}\nOrang Sabar Pantatnya Lebar")
+        a = sendMessage(message, f"Member Lain Sedang Mengunduh Lagu.\nTunggu Giliranmu {message.from_user.mention}\nJANGAN SPAM!!! ⛔️")
         time.sleep(15)
         return a.delete()
     else:
@@ -70,11 +70,11 @@ https://t.me/qobuzz/5683
     for link in linkler:
         sira = sira + 1
         try:
-            editMessage(inme, f"⬇️ Sedang Memproses Unduhan\nMohon Tunggu: {str(sira)} / {len(linkler)}")
+            editMessage(inme, f"🔽 Sedang Memproses Unduhan\n⏳ Mohon Tunggu: {str(sira)} / {len(linkler)}")
             qobuz.handle_url(link)
             for fil in absolutePaths("qobuzdown"):
                 if fil.lower().endswith(".jpg"): os.remove(fil)
-            editMessage(inme, f'⬆️ Mengunggah ke Telegram: {str(sira)} / {len(linkler)} ({len(list(absolutePaths("qobuzdown")))} Lagu)')
+            editMessage(inme, f'🔼 Mengunggah ke Telegram: {str(sira)} / {len(linkler)} ({len(list(absolutePaths("qobuzdown")))} Lagu)')
             for fil in sorted(absolutePaths("qobuzdown")):
                 x:Message = sendMusic(inme, fil)
                 if Config.LOG_CHANNEL:
