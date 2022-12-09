@@ -21,7 +21,7 @@ qobuz = QobuzDL(directory="qobuzdown",quality=Config.QOBUZ_QUAL,embed_art=True,s
 qobuz.get_tokens() # get 'app_id' and 'secrets' attrs
 qobuz.initialize_client(Config.QOBUZ_MAIL, Config.QOBUZ_PASS, qobuz.app_id, qobuz.secrets)
 
-@Client.on_message(filters.command(["start", "q"]))
+@Client.on_message(filters.command(["start", "q2"]))
 def antiSpam(client: Client, message: Message):
     if not AuthUserCheck(message): return
 
