@@ -31,14 +31,14 @@ class Bot(Client):
         if Config.OWNER_ID != 0:
             try:
                 await self.send_message(
-                    text= "🇹🇷 Bot Restarted",
+                    text= "🇮🇩 Bot Restarted",
                     chat_id=Config.OWNER_ID)
             except Exception as t:
                 LOGGER.error(str(t))
 
     async def stop(self, *args):
         if Config.OWNER_ID != 0:
-            texto = f"\n\n🇹🇷 Bot Restarted: {ReadableTime(time.time() - Config.botStartTime)}"
+            texto = f"\n\n🇮🇩 Bot Restarted: {ReadableTime(time.time() - Config.botStartTime)}"
             try:
                 await self.send_message(text= texto,chat_id=Config.OWNER_ID)
             except Exception as t:
