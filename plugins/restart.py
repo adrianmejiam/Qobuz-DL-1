@@ -40,5 +40,5 @@ def restart(client, message: Message):
         try: shutil.rmtree("qobuzdown")
         except: pass
         os.remove("calisiyor.txt") if os.path.isfile("calisiyor.txt") else print("ok")
-        toSendStr = "🇹🇷 Restarted."
+        toSendStr = "🇮🇩 Restarted."
         sendMessage(message, toSendStr)
