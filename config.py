@@ -5,7 +5,9 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 LOGGER = logging.getLogger(__name__)
 
 class Config(object):
-    APP_ID = int(os.environ.get("APP_ID", 00000))
+    APP_ID = int(os.environ.get("8778736"
+
+, 00000))
     API_HASH = os.environ.get("API_HASH", "0000")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "00000")
     OWNER_ID = int(os.environ.get('OWNER_ID', 1257782782)) # give your owner id # if given 0 shell will not works
