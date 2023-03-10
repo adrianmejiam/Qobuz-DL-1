@@ -11,8 +11,8 @@ class Config(object):
     OWNER_ID = int(os.environ.get('OWNER_ID', 1432132252)) # give your owner id # if given 0 shell will not works
     AUTH_IDS = [int(x) for x in os.environ.get("AUTH_IDS", "-1001625028324").split()] # if open to everyone give 0
     AUTH_IDS.append(OWNER_ID)
-    QOBUZ_MAIL = os.environ.get("QOBUZ_MAIL", "qacuza@lyft.live")
-    QOBUZ_PASS = os.environ.get("QOBUZ_PASS", "Qobuz2022")
+    QOBUZ_MAIL = os.environ.get("QOBUZ_MAIL", "xikehahi@lyft.live")
+    QOBUZ_PASS = os.environ.get("QOBUZ_PASS", "Qobuz2023")
     QOBUZ_QUAL = int(os.environ.get("QOBUZ_QUAL", 27))
     HEROKU_API_KEY = os.environ.get('HEROKU_API_KEY', None)
     HEROKU_APP_NAME = os.environ.get('HEROKU_APP_NAME', None)
